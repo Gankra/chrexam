@@ -11,6 +11,15 @@
 \documentclass[11pt]{exam}
 \RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
 \RequirePackage{tikz, pgflibraryplotmarks}
+\RequirePackage{hyperref}
+
+
+\def\QED{\ensuremath{{\square}}}
+\def\markatright#1{\leavevmode\unskip\nobreak\quad\hspace*{\fill}{#1}}
+\newenvironment{proof}
+  {\begin{trivlist}\item[\hskip\labelsep{\bf Proof.}]}
+  {\markatright{\QED}\end{trivlist}}
+
 
 % By default LaTeX uses large margins.  This doesn't work well on exams; problems
 % end up in the "middle" of the page, reducing the amount of space for students
@@ -19,11 +28,11 @@
 
 
 % Here's where you edit the Class, Exam, Date, etc.
-\newcommand{\class}{Math 1234}
-\newcommand{\term}{Spring 2012}
-\newcommand{\examnum}{Exam 2}
-\newcommand{\examdate}{3/28/12}
-\newcommand{\timelimit}{50 Minutes}
+\newcommand{\class}{Christmas 101}
+\newcommand{\term}{Fall 2015}
+\newcommand{\examnum}{Exam 1}
+\newcommand{\examdate}{December 25, 2015}
+\newcommand{\timelimit}{180 Minutes}
 
 % For an exam, single spacing is most appropriate
 \singlespacing
@@ -47,54 +56,65 @@
 \textbf{\term} &&\\
 \textbf{\examnum} &&\\
 \textbf{\examdate} &&\\
-\textbf{Time Limit: \timelimit} & Teaching Assistant & \makebox[2in]{\hrulefill}
+\textbf{Time Limit: \timelimit} & % Teaching Assistant & \makebox[2in]{\hrulefill}
 \end{tabular}\\
 \end{flushright}
 \rule[1ex]{\textwidth}{.1pt}
 
+Welcome to the third year of the ongoing tradition of making Beingessner(s)
+Edward and Holly work for the Christmas presents they receive from
+Beingessner(s) Julia, Sonia and Alexis, and Collymore, Mike.
 
-This exam contains \numpages\ pages (including this cover page) and
-\numquestions\ problems.  Check to see if any pages are missing.  Enter
-all requested information on the top of this page, and put your initials
-on the top of every page, in case the pages become separated.\\
+This year, the challenge is a multi-subject exam. Each point earned on the exam
+is equal to one Canadian dollar. A total of 60 points can be earned on the exam
+proper, and there are also bonus questions, meaning that the examinee could
+theoretically earn 70 Canadian dollars.
 
-You may \textit{not} use your books, notes, or any calculator on this exam.\\
+Only one test may be taken per examinee. Examinees may not communicate with each
+other, or with anyone other than the official exam proctors (Beingessner(s)
+Julia, Sonia and Alexis, and Collymore, Mike). All electronic devices will be
+confiscated, including laptops, tablets, desktop computers, fancy watches, time
+machines, cellphones, etc.
 
-You are required to show your work on each problem on this exam.  The following rules apply:\\
+Cheating on the exam will disqualify the examinee from receiving any money.
 
-\begin{minipage}[t]{3.7in}
-\vspace{0pt}
+This exam is open book. The following resources may be used:
+
+\begin{enumerate}
+\item Beingessner, Sean P. ``A study of the gain mechanism of gas filled proportional wire counters.'' PhD diss., Carleton University, 1984.
+
+\item Beingessner, Sonia. ``Self portrait R\&R.'' Illustration. 2015. From the artist’s personal Facebook account. \
+% url{https://www.facebook.com/photo.php?fbid=10153710069418659&set=rpd.510703658&type=3&theater}
+(accessed December 23, 2015).
+
+\item Beingessner, Sonia. ``The band in uncharted territory.'' Illustration. 2015. From the artist’s personal website.
+% \url{http://vaniabogue.blogspot.ca/2015/09/self-portrait-r-self-portrait-in-style.html}
+% (accessed December 23, 2015).
+
+\item Collymore, Mike. ``Starcrossed.'' Comic. 2015. From the artist’s personal website.
+% \url{http://mikecollymore.blogspot.ca/2015/11/starcrossed-inktober-2015.html}
+(accessed December 23, 2015).
+
+\item The Rust Team. \emph{The Rustonomicon}: The Dark Arts of Advanced and Unsafe Rust Programming. Draft documentation, 2015.
+% \url{https://killercup.github.io/trpl-ebook/nomicon-2015-09-12.a4.pdf}
+(accessed: December 23, 2015).
+
+\item Beingessner, Julia. ``There is no Manchukuo.'' Essay, McGill University, 2009.
+
+\item Beingessner, Julia. ``Web Services' Guide to Web Accessibility and Technical Requirements.''
+Ottawa, Treasury Board of Canada Secretariat, 2012. © Her Majesty the Queen in Right of
+Canada.
+\end{enumerate}
+
+Calculators are forbidden in this exam, with the exception of:
+
 \begin{itemize}
-
-\item \textbf{If you use a ``fundamental theorem'' you must indicate this} and explain
-why the theorem may be applied.
-
-\item \textbf{Organize your work}, in a reasonably neat and coherent way, in
-the space provided. Work scattered all over the page without a clear ordering will
-receive very little credit.
-
-\item \textbf{Mysterious or unsupported answers will not receive full
-credit}.  A correct answer, unsupported by calculations, explanation,
-or algebraic work will receive no credit; an incorrect answer supported
-by substantially correct calculations and explanations might still receive
-partial credit.
-
-
-\item If you need more space, use the back of the pages; clearly indicate when you have done this.
+\item Sean Beingessner's Polish reverse polarization calculator from 1975.
 \end{itemize}
 
-Do not write in the table to the right.
-\end{minipage}
-\hfill
-\begin{minipage}[t]{2.3in}
-\vspace{0pt}
-%\cellwidth{3em}
-\gradetablestretch{2}
-\vqword{Problem}
-\addpoints % required here by exam.cls, even though questions haven't started yet.
-\gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
 
-\end{minipage}
+
+
 \newpage % End of cover page
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,34 +128,326 @@ Do not write in the table to the right.
 
 \begin{questions}
 
-% Basic question
-\addpoints
-\question[10] Differentiate $f(x)=x^2$ with respect to $x$.
 
-% Question with parts
+
+
 \newpage
+\section{Civics}
 \addpoints
-\question Consider the function $f(x)=x^2$.
-\begin{parts}
-\part[5] Find $f'(x)$ using the limit definition of derivative.
+
+\question[2] This is an exam. You will need materials such as pencils, pens,
+markers and scrap paper. How did you acquire these things today?
 \vfill
-\part[5] Find the line tangent to the graph of $y=f(x)$ at the point where $x=2$.
+
+\question[3] For the past two years, your cousins have made you earn your
+Christmas gifts via the completion of convoluted challenges. How did you prepare
+yourself this year? If you prepared nothing, explain why:
+\vfill
+
+
+
+
+
+\newpage
+\section{Know Your Beingessners (1 point each)}
+
+\begin{enumerate}
+\item Phil Beingessner is very allergic to a certain animal. Which animal is he allergic to?
+
+\begin{enumerate}
+\item cats
+\item cats
+\item cats
+\item cats
+\end{enumerate}
+
+
+
+\item When Julia was small, she played a game called ``Thunderdome.'' What did that game entail?
+
+\begin{enumerate}
+\item Building a large arena out of metal bars and forcing anyone who broke the law to fight
+in death matches.
+\item Hiding with Sonia during thunderstorms, because they were afraid of them.
+\item Hiding in the rhubarb patch in front of Granny’s house until her dad came home from
+school/work, then leaping out, screaming ``THUNDERDOME'' and beating him with
+rhubarb leaves.
+\item Watching Mad Max movies over and over.
+\end{enumerate}
+
+
+
+\item What is Granny’s first name?
+
+\begin{enumerate}
+\item{} Rachel
+\item{} Ruth
+\item{} Rita
+\item{} Rose
+\end{enumerate}
+
+
+\item Sonia likes animals. What type of animal has she wanted to own as a pet, but hasn’t yet?
+
+\begin{enumerate}
+\item{} Pig
+\item{} Skunk
+\item{} Dog
+\item{} All of the above
+\end{enumerate}
+
+
+\item When Alexis was a baby, Phil had a nickname for him. It made Alexis’ mom super mad, for no
+logical reason. What was the nickname?
+
+\begin{enumerate}
+\item{} Lexy
+\item{} Ubmbogo
+\item{} Small Sean
+\item{} Otis
+\end{enumerate}
+
+
+\item Dr. Sean P. Beingessner is a doctor. What kind of doctor is he?
+
+\begin{enumerate}
+\item{} Science
+\item{} Water and Wastewater Studies
+\item{} Mathematics
+\item{} Physics
+\end{enumerate}
+
+
+\item Matt is a man who makes maps. Recently he worked abroad for many months. What country
+was he working in?
+
+\begin{enumerate}
+\item{} India
+\item{} Indonesia
+\item{} Shanghai
+\item{} Malaysia
+\end{enumerate}
+
+
+\item When Phil was a geologist, he always borrowed a certain type of item from Sean, and then lost it in whatever weird country he was working in. What type of item was it?
+
+\begin{enumerate}
+\item{} Coat
+\item{} Bag
+\item{} Camera
+\item{} Compass
+\end{enumerate}
+
+
+
+\item Anne is a very nice and calm person. What is the thing you can do to make her run around the
+room screaming?
+
+\begin{enumerate}
+\item{} Take her picture
+\item{} Show her snake
+\item{} Make her play Thunderdome
+\item{} Ask her about \emph{Sapient Systems}
+\end{enumerate}
+
+
+
+\item Julie Beingessner is married to someone. We don’t know if that was a great idea on her part, but we do know what day she got married. What day was it?
+
+\begin{enumerate}
+\item{} May 21, 1994
+\item{} May 22, 1994
+\item{} May 23, 1994
+\item{} May 24, 1994
+\end{enumerate}
+
+
+
+\item Mike Collymore isn’t a Beingessner, but he’s Beingessner-adjacent. What is his favourite
+basketball team?
+
+\begin{enumerate}
+\item{} Toronto Raptors
+\item{} Boston Celtics
+\item{} Manchester United
+\item{} New York Knicks
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+\newpage
+\section{History}
+
+\subsection{Multiple Choice (1 point each)}
+
+\begin{enumerate}
+
+
+
+\item Some historians love to say that before World War One, ``Europe was a
+\underline{\hspace{2cm}} keg.'' Julia thinks that these kinds of Historians
+are garbage people. What goes in the blank space?
+
+\begin{enumerate}
+\item beer
+\item powder
+\item steakhouse
+\item new
+\end{enumerate}
+
+
+
+
+\item Leopold von Ranke was a German historian during the 19th century. He is famous for
+emphasizing that history should be empirical, based on primary sources and focused on politics.
+It’s Ranke's fault that people think History is boring and that there’s no need to write new
+History books, because:
+
+\begin{enumerate}
+\item History is just the dates of battles and names of Kings, and that’s all been written down.
+\item It’s impossible to prove what actually happened in the past.
+\item The proletariat needs to sieze the means of production.
+\item Is this a historiography question? Even historians don’t care about historiography.
+\end{enumerate}
+
+
+
+
+\item What is Marxist Feminism?
+
+\begin{enumerate}
+\item A branch of feminism focused on investigating and explaining the ways in which women
+are oppressed through systems of capitalism and private property.
+\item A branch of Marxism focused on investigating and explaining the ways in which women
+oppress men through systems of culture and withholding goods.
+\item A branch of economics focused on investigating and explaining the ways in which
+women disrupt financial systems by entering the workforce, due to the added strain on
+social services such as child care.
+\item Literally the worst.
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+\newpage
+\subsection{Essay Questions}
+\vfill
+
+
+
+
+
+
+\newpage
+\section{Maths}
+
+\question[6] Determine the roots and critical points of $x^2 + x - 2$, and plot
+it.
+\vfill
+
+
+
+
+\newpage
+\question Recall that a number is said to be \emph{even} if it can be written
+as $2k$, for \emph{some} integer $k$. Similarly, a number is \emph{odd} if it
+can be written as $2k + 1$. For instance, $18 = 2(9)$, and $15 = 2(7) + 1$.
+
+We can use these definitions to prove how integers change under certain
+transformations. For instance, we can show that if $x$ is even, $x^2$ is even:
+
+\begin{proof}
+Because $x$ is even, we know that $x = 2k$ for some integer $k$. Therefore,
+\[\begin{array}{rclr}
+x^2 &=& (2k)^2 & (x = 2k) \\
+&=& 4k^2 & \\
+&=& 2(2k^2) & \\
+\end{array}\]
+
+$2k^2$ is an integer, so we have shown that $x^2$ is even.
+\end{proof}
+
+
+\begin{parts}
+\part[3] Prove that if $x$ is even, $(x + 1)^2$ is odd
+\vfill
+
+
+
+\part[3] Prove that if $x$ is odd, $(x + 1)^2$ is even
+\vfill
+
+
+\end{parts}
+
+
+
+
+
+
+
+\newpage
+\section{Physics}
+
+\question You fire a high-powered laser at a cat, which enters the cat's
+eye. For our purposes, the eye and inside of the head can be assumed to be mostly
+water. Th
+
+
+
+\begin{parts}
+\part[1] What law governs how the beam of light will behave when it enters the
+cat's eye?
+\\
+\\
+
+\part[2] Assuming the surface of the cat's eye is perpendicular to its brain,
+do you expect the beam of light to bend towards the cat's brain and destroy it,
+or bend away and save it? Why?
 \vfill
 \end{parts}
 
-% If you want the total number of points for a question displayed at the top,
-% as well as the number of points for each part, then you must turn off the point-counter
-% or they will be double counted.
-\newpage
-\addpoints
-\question[10] Consider the function $f(x)=x^3$.
-\noaddpoints % If you remove this line, the grading table will show 20 points for this problem.
-\begin{parts}
-\part[5] Find $f'(x)$ using the limit definition of derivative.
-\vspace{4.5in}
-\part[5] Find the line tangent to the graph of $y=f(x)$ at the point where $x=2$.
-\end{parts}
 
+
+
+
+\newpage
+\question[9] You plan to fire a cat from a trebuchet. Based on your calculations, the cat
+will leave the trebuchet at a height of $4m$, travelling $10m/s$, at an angle of
+$45$ degrees from the ground ($cos(45) = sin(45) = 0.7$). The cat weighs $1kg$,
+is spherical, uniform, frictionless, and a perfect conductor. Gravity is $10m/s^2$
+
+How far from the trebuchet should you place your lava pit to catch the cat? Note
+that your lava pit is fairly large, and cats are dumb and will probably run into
+it anyway, so precision isn't particularly important (i.e. feel free to approximate square
+roots). We're more interested in
+your methods.
+
+
+
+
+
+
+
+\newpage
+\question[3] Albert Einstein and Isaac Newton are in a fist fight. Each uses their
+mastery of physics to amplify their blows. Einstein uses general relativity to
+make his fists twice as massive on impact. Newton uses gravity wells to make them twice as
+fast (but still punches as frequently). Who has the advantage, and why?
+\vfill
+
+
+
+
+
+\question[3] Bonus: If Newton's and Einstein's fists have a resting mass of 1kg and
+originally punched at $1/10$th the speed of light, how does this change the situation?
+\vfill
 
 
 \end{questions}
