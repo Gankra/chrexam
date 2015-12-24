@@ -12,6 +12,9 @@
 \RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
 \RequirePackage{tikz, pgflibraryplotmarks}
 \RequirePackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 
 \def\QED{\ensuremath{{\square}}}
@@ -335,16 +338,130 @@ social services such as child care.
 \end{enumerate}
 
 \newpage
-\subsection{Essay Questions}
+\subsection{Long Form Questions}
+\setcounter{question}{0}
+\question Choose one of the following two questions and answer it using full sentences. Your answer should have:
+\begin{enumerate}
+\item An introduction/thesis statement (1 point)
+\item Three ideas that back up your thesis (3 points)
+\item A conclusion (1 point)
+\end{enumerate}
+\begin{itemize}
+\item Option 1: World War 2 broke out in 1939. Canada joined the fighting right away. The USA didn’t join in until 1942. Why?
+\item Option 2: What is the cultural/historical significance of the potato?
+\end{itemize}
 \vfill
 
+\newpage
+\section{Graphic Design}
+\subsection{Visual Accuity}
+\setcounter{question}{0}
 
+\question Rank the following 6 images in order of cuteness. THERE IS ONLY ONE RIGHT ANSWER.
 
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{cute1}
+        \caption{\underline{\hspace{2cm}}} 
+        \label{fig:anzu}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{cute2}
+        \caption{\underline{\hspace{2cm}}} 
+        \label{fig:pig}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{cute3}
+        \caption{\underline{\hspace{2cm}}} 
+        \label{fig:rice}
+    \end{subfigure}   
+\end{figure}
 
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+\addtocounter{subfigure}{3}
+        \includegraphics[width=\textwidth]{cute4}
+        \caption{\underline{\hspace{2cm}}} 
+        \label{fig:dude}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{cute5}
+        \caption{\underline{\hspace{2cm}}} 
+        \label{fig:snake}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{cute6}
+        \caption{\underline{\hspace{2cm}}} 
+        \label{fig:baby}
+    \end{subfigure}  
+\end{figure}
+ 
 
 
 \newpage
+\section{Visual Arts}
+\subsection{Practical Applications}
+\setcounter{question}{0}
+\question Draw something awesome. Preferably using more than one colour. Adherence to colour theory principles encouraged (i.e.: complementary colours, etc.)
+\vfill
+
+\newpage
+\section{English}
+\subsection{Multiple Choice (1 point each)}
+
+\begin{enumerate}
+
+
+
+\item Which sentence is punctuated correctly?
+
+\begin{enumerate}
+\item It's Lucy Liu's car, so let her decide where we're going.
+\item Its Lucy's Liu car, so let her decide where were going.
+\item It's Lucy Lius car, so let her decide where we're going.
+\item Its' Lucy Liu's car, so let her decide where wear going.
+\end{enumerate}
+
+\item Which is an example of hyperbole?
+\begin{enumerate}
+\item Leeeeeeroy Jeeennnkins!
+\item Oh, the weather outside is weather.
+\item I have a million things to do today.
+\item The vibrating washer caused the house to shake.
+\end{enumerate}
+
+\item Which poetic device is NOT being used in the following sentence:
+  “Bobby broke a bottle-BAM; the beetles bellowed and bolted.”
+\begin{enumerate}
+\item onomatopoeia
+\item personification
+\item connotation
+\item alliteration
+\end{enumerate}
+
+\item Identify the main idea in this paragraph:
+
+(1)You read the advertisement in the Saturday morning paper, and the deal seems too good to be true. (2)It seems that the computer you had been shopping for is available at the local computer store for half the price you found in your search. (3)You arrive at the store in the early morning, but you are greeted with a salesman's disappointing reply that the store is already sold out. (4)Still, he continues, the store can offer what you want with some upgrades for slightly more money. (5)This tactic is called bait and switch, and it is a marketing strategy used to lure customer into the store with the purpose of pressuring them into buying more than they had originally planned.
+
+\begin{enumerate}
+\item Sentence 1
+\item Sentence 2
+\item Sentence 3
+\item Sentence 4
+\item Sentence 5
+\end{enumerate}
+
+\end{enumerate}
+
+\newpage
 \section{Maths}
+\setcounter{question}{0}
 
 \question[6] Determine the roots and critical points of $x^2 + x - 2$, and plot
 it.
@@ -393,6 +510,7 @@ $2k^2$ is an integer, so we have shown that $x^2$ is even.
 
 \newpage
 \section{Physics}
+\setcounter{question}{0}
 
 \question You fire a high-powered laser at a cat, which enters the cat's
 eye. For our purposes, the eye and inside of the head can be assumed to be mostly
@@ -448,6 +566,20 @@ fast (but still punches as frequently). Who has the advantage, and why?
 \question[3] Bonus: If Newton's and Einstein's fists have a resting mass of 1kg and
 originally punched at $1/10$th the speed of light, how does this change the situation?
 \vfill
+
+\newpage
+\section{Bonus Round!}
+\setcounter{question}{0}
+\question What famous hockey player signed the inside of Matt’s miter board when he graduated high school? 
+\vspace{2cm}
+\question Write a haiku.
+\vspace{5cm}
+\question What’s your favourite alchoholic drink? 
+\vspace{2cm}
+\question If purple had a smell what would it’s square root be? 
+\vspace{2cm}
+\question This hit / That ice cold / Michelle Pfeiffer
+\vspace{2cm}
 
 
 \end{questions}
